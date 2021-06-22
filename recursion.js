@@ -25,4 +25,20 @@ const factorial = (num) => {
   return num * factorial(num - 1);
 };
 
-console.log(factorial(5));
+console.log(factorial(5), "factorial function");
+
+const fib = (num) => {
+  if (num < 2) {
+    return num;
+  }
+  return fib(num - 1) + fib(num - 2);
+};
+
+console.log(fib(15), "fib function");
+
+const power = (base, exponent) => {
+  if (exponent === 0) return 1;
+  return base * power(base, exponent - 1);
+};
+
+console.log(power(4, 4), "power function");
